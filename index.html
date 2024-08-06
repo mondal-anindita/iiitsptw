@@ -22,25 +22,25 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 10px;
             padding: 20px;
-            width: 300px;
-        }
-        .audio-block h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .audio-block audio {
             width: 100%;
+            max-width: 600px;
+        }
+        .audio-pair {
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 10px;
+        }
+        .audio-pair audio {
+            width: 48%;
         }
         .text-pair {
             display: flex;
             justify-content: space-between;
-            margin-top: 10px;
         }
         .text-pair p {
-            margin: 0;
-            width: 45%;
+            width: 48%;
             font-size: 16px;
+            margin: 0;
         }
     </style>
 </head>
@@ -51,51 +51,57 @@
         <!-- Audio Sample Section 1 -->
         <div class="audio-block">
             <h2>Sample 1</h2>
-            <audio controls>
-                <source src="audio/v2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio controls>
-                <source src="audio/v1.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <div class="text-pair">
-                <p><strong>English:</strong> This is the first pair of samples.</p>
-                <p><strong>Hindi:</strong> यह पहला नमूना जोड़ा है।</p>
+            <div class="audio-pair">
+                <audio controls>
+                    <source src="audio/v2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="audio/v1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="text-ppair">
+                <p><strong>English:</strong> First audio description.</p>
+                <p><strong>Hindi:</strong> पहला ऑडियो विवरण।</p>
             </div>
         </div>
 
         <!-- Audio Sample Section 2 -->
         <div class="audio-block">
             <h2>Sample 2</h2>
-            <audio controls>
-                <source src="audio/v2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio controls>
-                <source src="audio/v2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <div class="audio-pair">
+                <audio controls>
+                    <source src="audio/v1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="audio/v1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
             <div class="text-pair">
-                <p><strong>English:</strong> This is the second pair of samples.</p>
-                <p><strong>Hindi:</strong> यह दूसरा नमूना जोड़ा है।</p>
+                <p><strong>English:</strong> Second audio description.</p>
+                <p><strong>Hindi:</strong> दूसरा ऑडियो विवरण।</p>
             </div>
         </div>
 
         <!-- Audio Sample Section 3 -->
         <div class="audio-block">
             <h2>Sample 3</h2>
-            <audio controls>
-                <source src="audio/v1.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio controls>
-                <source src="audio/v1.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <div class="audio-pair">
+                <audio controls>
+                    <source src="audio/v2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="audio/v2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
             <div class="text-pair">
-                <p><strong>English:</strong> This is the third pair of samples.</p>
-                <p><strong>Hindi:</strong> यह तीसरा नमूना जोड़ा है।</p>
+                <p><strong>English:</strong> Third audio description.</p>
+                <p><strong>Hindi:</strong> तीसरा ऑडियो विवरण।</p>
             </div>
         </div>
     </div>
