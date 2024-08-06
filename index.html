@@ -4,30 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Samples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .audio-block {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+        }
+        .audio-block h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .audio-block audio {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .text-pair {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .text-pair p {
+            margin: 0;
+            width: 45%;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Audio Samples</h1>
-    
-    <!-- Audio Sample 1 -->
-    <div>
-        <h2>Sample 1</h2>
-        <audio controls>
-            <source src="audio/v1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <p>Description for Sample 1.</p>
+    <div class="container">
+        <!-- Audio Sample 1 -->
+        <div class="audio-block">
+            <h2>Sample 1</h2>
+            <audio controls>
+                <source src="audio/v1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="text-pair">
+                <p><strong>English:</strong> This is the first sample.</p>
+                <p><strong>Hindi:</strong> यह पहला नमूना है।</p>
+            </div>
+        </div>
+
+        <!-- Audio Sample 2 -->
+        <div class="audio-block">
+            <h2>Sample 2</h2>
+            <audio controls>
+                <source src="audio/v2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="text-pair">
+                <p><strong>English:</strong> This is the second sample.</p>
+                <p><strong>Hindi:</strong> यह दूसरा नमूना है।</p>
+            </div>
+        </div>
+
+        <!-- Audio Sample 3 -->
+        <div class="audio-block">
+            <h2>Sample 3</h2>
+            <audio controls>
+                <source src="audio/v2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="text-pair">
+                <p><strong>English:</strong> This is the third sample.</p>
+                <p><strong>Hindi:</strong> यह तीसरा नमूना है।</p>
+            </div>
+        </div>
     </div>
-    
-    <!-- Repeat for each sample -->
-    <div>
-        <h2>Sample 2</h2>
-        <audio controls>
-            <source src="audio/v2.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <p>Description for Sample 2.</p>
-    </div>
-    <!-- Add more samples as needed -->
-    
+
 </body>
 </html>
